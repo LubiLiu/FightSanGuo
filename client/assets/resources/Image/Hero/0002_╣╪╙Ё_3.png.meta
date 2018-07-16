@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ba0ecba1-1d01-47c4-9a6c-98b83f2829af",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "0002_关羽_3": {
+      "ver": "1.0.3",
+      "uuid": "98222b19-c0b6-4cf3-af3d-acc9d9ad286e",
+      "rawTextureUuid": "ba0ecba1-1d01-47c4-9a6c-98b83f2829af",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -0.5,
+      "trimX": 1,
+      "trimY": 1,
+      "width": 359,
+      "height": 511,
+      "rawWidth": 360,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

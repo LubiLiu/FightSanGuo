@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "c418630d-706d-4db2-be99-08e185b8e0e3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "war_assets_city2_3": {
+      "ver": "1.0.3",
+      "uuid": "bc1a8735-9289-47b7-b042-6ec78494b61f",
+      "rawTextureUuid": "c418630d-706d-4db2-be99-08e185b8e0e3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 222,
+      "height": 133,
+      "rawWidth": 222,
+      "rawHeight": 133,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

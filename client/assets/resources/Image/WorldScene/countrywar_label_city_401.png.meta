@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "0d99ff2a-47f6-4080-8d1a-0e02e5b92a29",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "countrywar_label_city_401": {
+      "ver": "1.0.3",
+      "uuid": "e1dcd383-9383-49d6-9746-2f329e0b6120",
+      "rawTextureUuid": "0d99ff2a-47f6-4080-8d1a-0e02e5b92a29",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -1,
+      "trimX": 1,
+      "trimY": 2,
+      "width": 62,
+      "height": 26,
+      "rawWidth": 64,
+      "rawHeight": 28,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
