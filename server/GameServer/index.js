@@ -1,5 +1,6 @@
 'use strict';
 var http = require('http');
+console.log(process);
 
 var app = require('./app');
 var define = require('../Common/define');
