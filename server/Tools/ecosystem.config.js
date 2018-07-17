@@ -1,7 +1,7 @@
 var path = require('path');
 module.exports = {
     apps: [{
-        name: 'app',
+        name: 'gate',
         script: path.join(__dirname, '../GateServer/index.js'),
         env: {
             NODE_ENV: 'aaa',
