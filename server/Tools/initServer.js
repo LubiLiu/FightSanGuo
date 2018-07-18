@@ -30,6 +30,9 @@ let action = function () {
             //根据config文件夹结构生成Log文件夹
             let sourcePath = path.join(__dirname, '../Config/');
             let targetPath = path.join(__dirname, '../Logs/');
+            if(!fs.existsSync(targetPath)){
+                fs.mkdirSync(targetPath);
+            }
             fs.readdir(sourcePath, function (err, files) {
                 for (let i = 0; i < files.length; i++) {
                     let dirName = path.join(sourcePath, files[i]);
