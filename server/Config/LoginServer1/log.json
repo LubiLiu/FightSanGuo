@@ -1,6 +1,6 @@
 {
     "name": "LoginServer1",
-    "path": "../../Logs/LoginServer1/",
+    "path": "../Logs/LoginServer1/",
     "streams": [
         {
             "type": "rotating-file",
