@@ -1,9 +1,11 @@
 'use strict';
-var http = require('http');
+let http = require('http');
+let config = require('../Common/config');
+config.init(process.env.CONFIG_PATH);
 
-var app = require('./app');
-var define = require('../Common/define');
-var serverConf = require('./config/server.json');
+let app = require('./app');
+let define = require('../Common/define');
+let serverConf = config.getConfig('server.json');
 
 let logger = require('../Common/logger').getLogger();
 app.set(define.DataKey.ServerName, serverConf.name);
@@ -24,7 +26,7 @@ function onListening() {
 }
 
 
-var server = http.createServer(app);
+let server = http.createServer(app);
 
 server.listen(serverConf.port);
 server.on('error', onError);

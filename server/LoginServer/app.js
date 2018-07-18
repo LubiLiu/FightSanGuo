@@ -6,8 +6,9 @@ var bodyParser = require('body-parser');
 
 var logger = require('../Common/logger');
 var define = require('../Common/define');
-var loggerConfig = require('./config/log.json');
-var dbConfig = require('./config/db.json');
+let config = require('../Common/config');
+var loggerConfig = config.getConfig('log.json');
+var dbConfig = config.getConfig('db.json');
 logger.generator(loggerConfig);
 var db = require('../Common/db');
 db.generator(dbConfig);

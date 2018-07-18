@@ -7,8 +7,9 @@ var tools = require('../../Common/tools');
 var error = require('../../Common/error');
 var token = require('../../Common/token');
 var httpUtil = require('../../Common/httpUtil');
+let config = require('../../Common/config');
 
-var serverConf = require('../config/server.json');
+var serverConf = config.getConfig('server.json');
 var validation = require('../../DataBase/schema/validation');
 var player = require('../../DataBase/schema/player');
 let PlayerController = function () {

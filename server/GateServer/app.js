@@ -1,15 +1,16 @@
 'use strict';
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+let express = require('express');
+let path = require('path');
+let cookieParser = require('cookie-parser');
+let bodyParser = require('body-parser');
 
-var logger = require('../Common/logger');
-var loggerConfig = require('./config/log.json');
+let logger = require('../Common/logger');
+let config = require('../Common/config');
+let loggerConfig = config.getConfig('log.json');
 logger.generator(loggerConfig);
-var routes = require('./routes/index');
+let routes = require('./routes/index');
 
-var app = express();
+let app = express();
 // view engine setup
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

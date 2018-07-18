@@ -9,7 +9,6 @@ var error = require('../../Common/error');
 var token = require('../../Common/token');
 var httpUtil = require('../../Common/httpUtil');
 
-var serverConf = require('../config/server.json');
 var validation = require('../../DataBase/schema/validation');
 var player = require('../../DataBase/schema/player');
 let PlayerController = function () {

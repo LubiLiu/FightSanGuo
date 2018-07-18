@@ -1,8 +1,9 @@
-var async = require('async');
-var path = require('path');
-var process = require('child_process');
+let async = require('async');
+let path = require('path');
+let fs = require('fs');
+let process = require('child_process');
 
-var action = function () {
+let action = function () {
     async.waterfall([
         function (anext) {
             //Gate Server 的初始化
@@ -12,14 +13,14 @@ var action = function () {
             });
         },
         function (anext) {
-            //Gate Server 的初始化
+            //Login Server 的初始化
             process.exec('npm install', { cwd: path.join(__dirname, '../LoginServer/') }, function (err, stdout, stderr) {
                 console.log(stdout);
                 anext(err);
             });
         },
         function (anext) {
-            //Gate Server 的初始化
+            //Game Server 的初始化
             process.exec('npm install', { cwd: path.join(__dirname, '../GameServer/') }, function (err, stdout, stderr) {
                 console.log(stdout);
                 anext(err);

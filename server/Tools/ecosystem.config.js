@@ -1,13 +1,18 @@
 var path = require('path');
 module.exports = {
-    apps: [{
-        name: 'gate',
-        script: path.join(__dirname, '../GateServer/index.js'),
-        env: {
-            NODE_ENV: 'aaa',
-        },
-        env_production: {
-            NODE_ENV: 'bbb',
+    apps: [
+        {
+            name: 'gate',
+            script: path.join(__dirname, '../GateServer/index.js'),
+            env: {
+                CONFIG_PATH: path.join(__dirname, '../Config/GateServer1/')
+            }
+        }, {
+            name: 'login1',
+            script: path.join(__dirname, '../LoginServer/index.js'),
+            env: {
+                CONFIG_PATH: path.join(__dirname, '../Config/LoginServer1/')
+            }
         }
-    }]
+    ]
 }

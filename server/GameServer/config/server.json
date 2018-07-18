@@ -1,6 +1,0 @@
-{
-    "name": "GameServer",
-    "host": "localhost",
-    "port": 3002,
-    "gateserver": "localhost:3000"
-}

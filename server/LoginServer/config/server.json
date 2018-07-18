@@ -1,6 +1,0 @@
-{
-    "name": "LoginServer",
-    "host": "localhost",
-    "port": 3001,
-    "gateserver": "localhost:3000"
-}
