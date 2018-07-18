@@ -1,6 +1,6 @@
 {
     "name": "GateServer1",
-    "path": "../../Logs/GateServer1/",
+    "path": "../Logs/GateServer1/",
     "streams": [
         {
             "type": "rotating-file",
