@@ -1,6 +1,6 @@
 {
     "name": "GameServer",
-    "path": "../GameServer/logs",
+    "path": "../Logs/GameServer1/",
     "streams": [
         {
             "type": "rotating-file",
