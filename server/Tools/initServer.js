@@ -25,6 +25,22 @@ let action = function () {
                 console.log(stdout);
                 anext(err);
             });
+        },
+        function (anext) {
+            //根据config文件夹结构生成Log文件夹
+            let sourcePath = path.join(__dirname, '../Config/');
+            let targetPath = path.join(__dirname, '../Logs/');
+            fs.readdir(sourcePath, function (err, files) {
+                for (let i = 0; i < files.length; i++) {
+                    let dirName = path.join(sourcePath, files[i]);
+                    if (fs.statSync(dirName).isDirectory()) {
+                        let targetDirName = path.join(targetPath, files[i]);
+                        if (!fs.existsSync(targetDirName)) {
+                            fs.mkdirSync(targetDirName);
+                        }
+                    }
+                }
+            });
         }
     ], function (err) {
         console.log('初始化完成');
