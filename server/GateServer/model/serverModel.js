@@ -129,7 +129,7 @@ ServerModel.prototype.checkServers = function (servers) {
  * @param {Object} server 
  */
 ServerModel.prototype.checkServer = function (server) {
-    //TODO httpRequest egobus_client_custom
+    //TODO httpRequest
 }
 
 module.exports = new ServerModel();
